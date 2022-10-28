@@ -12,7 +12,7 @@ function convertPokemonToLi(pokemon) {
         <div class="col-md-6 p-1">
             <img id="pokemonImg" src="${pokemon.photo}" class="img-fluid rounded-start" alt="${pokemon.name}">
         </div>
-        <div class="col-md-6 p-2">
+        <div class="col-md-6 p-1">
             <class="card-body">
                 <h5>#${pokemon.number} - ${pokemon.name}</h5>
                 <ol class="types">
