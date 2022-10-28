@@ -1,28 +1,27 @@
-const pokemonList = document.getElementsByClassName("pokemons");
-const loadMoreButton = document.getElementById("loadMoreButton");
+const pokemonList = document.getElementById('pokemonList')
+const loadMoreButton = document.getElementById('loadMoreButton')
 
-const maxRecords = 151;
+const maxRecords = 151
 const limit = 0;
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
-  return ` <div class="card poke mb-3 ${pokemon.type}">
+  return ` <div class="col">
+    <div class="card poke ${pokemon.type}">
     <div class="row g-0">
-        <div class="col-md-7">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-3"><img id="pokebola" src="../favicon-16x16.png" class="img-fluid rounded-start"alt="pokebola"></div>
-                    <div class="col-md-9"><h5>#${pokemon.number} - ${pokemon.name}</h5></div>
-                </div>
+        <div class="col-md-6 p-1">
+            <img id="pokemonImg" src="${pokemon.photo}" class="img-fluid rounded-start" alt="${pokemon.name}">
+        </div>
+        <div class="col-md-6 p-2">
+            <class="card-body">
+                <h5>#${pokemon.number} - ${pokemon.name}</h5>
                 <ol class="types">
                     ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join("")}
                 </ol>
             </div>
         </div>
-        <div class="col-md-5">
-            <img id="pokemonImg" src="${pokemon.photo}" class="img-fluid rounded-start"
-                alt="${pokemon.name}">
-        </div>
+        
+    </div>
     </div>
 </div>`;
 }

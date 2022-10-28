@@ -34,11 +34,10 @@ p{
         list-style: none;
     }
 
-.pokemons .poke{
-    max-width: 50vh;
+ .poke{
     padding: 1rem;
-    border-radius: 1rem;
-    margin: .5rem;
+    border-radius: 2rem;
+    margin: 1rem;
 }
 
 .pagination {
@@ -67,8 +66,7 @@ p{
 }
 
 #pokemonImg{
-    width: 95%;
-    height: auto;
+    height: 8rem;
 }
 
 h5{
@@ -79,9 +77,12 @@ h5{
 li{
     font-size: .7rem;
     list-style: none;
-    padding: .1rem;
-    border-radius: 1rem;
-    background-color: #88888888;
+    padding: .1rem .3rem;
+    margin: .1rem -2rem;
+    border-radius: .5rem;
+    border:1px solid #000 ;
+    
+    width: fit-content;
 }
 
 /* Cores dos tipos de pokemon */
